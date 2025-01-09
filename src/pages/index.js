@@ -11,24 +11,21 @@ const IndexPage = () => {
     <Container>
       <StyledHome>
         <SEO title="Home" />
-        <h1>Hey, I'm Rohan</h1>
-        <p>a coder who designs sometimes.</p>
+        <h1>Oi, aqui é o Manoel</h1>
+        <p>Apenas um dev a procura do seu código.</p>
 
-        <h4>builds beautifully creative things @Microsoft </h4>
+        <h4>Procurando um enigma sem solução </h4>
         <div>
           <Link to="/experience">
-            <span>‣ some experiences</span>
+            <span>‣ Experiência</span>
           </Link>
           <Link to="/creative">
-            <span>‣ creative stuffs</span>
+            <span>‣ Repositório</span>
           </Link>
           <Link to="/storytelling">
-            <span>‣ storytelling</span>
+            <span>‣ Sobre mim</span>
           </Link>
         </div>
-
-        <Newsletter />
-
         <Social />
       </StyledHome>
     </Container>

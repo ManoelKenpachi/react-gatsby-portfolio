@@ -5,12 +5,12 @@ import { GrInstagram } from "react-icons/gr"
 import { AiOutlineGithub } from "react-icons/ai"
 
 const sociallinks = {
-  facebook: "https://www.facebook.com/rohanprasadofficial",
-  twitter: "https://twitter.com/rohanpdofficial",
-  instagram: "https://www.instagram.com/rohanprasadofficial/",
-  linkedin: "https://www.linkedin.com/in/rohanprasadofficial/",
-  github: "https://github.com/rohanprasadofficial",
-  youtube: "https://www.youtube.com/rohanprasadofficial",
+  facebook: "https://www.facebook.com/profile.php?id=100009496969668",
+  twitter: "https://twitter.com",
+  instagram: "https://www.instagram.com/manoelkenpachi/",
+  linkedin: "https://www.linkedin.com/in/manoel-silva-20936815a/",
+  github: "https://github.com/ManoelKenpachi",
+  youtube: "https://www.youtube.com",
 
   target: "blank",
 }

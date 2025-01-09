@@ -43,16 +43,9 @@ export default function Navbar({ toggleTheme, isDark }) {
               </li>
 
               <li>
-                <Link to="/youtube">youtube</Link>
-              </li>
-
-              <li>
                 <Link to="/contact">contact</Link>
               </li>
 
-              <li>
-                <Link to="/blog">blog</Link>
-              </li>
             </ul>
           </div>
         )}
@@ -68,16 +61,9 @@ export default function Navbar({ toggleTheme, isDark }) {
             </li>
 
             <li>
-              <Link to="/youtube">youtube</Link>
-            </li>
-
-            <li>
               <Link to="/contact">contact</Link>
             </li>
 
-            <li>
-              <Link to="/blog">blog</Link>
-            </li>
           </ul>
         </div>
       </StyledNav>

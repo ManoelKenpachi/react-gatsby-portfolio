@@ -33,18 +33,22 @@ export default function Experience() {
         <Link to="/">
           <IoIosArrowBack className="back" />
         </Link>
-        <h2> where i work </h2>
+        <h2> Experiencia de carreira </h2>
         <p>
-          coming from Computer Science backgroud i kept exploring various
-          oppurtunities . I started freelancing in my 2nd year of my college and
-          continued it for 2+ years till i started into my one of my full time
-          roles. I also did some contract position. I have listed which i can
-          share and others had NDA so cannot share much.
+        Iniciei minha trajetória profissional logo após concluir o curso técnico na ETEC, 
+        onde adquiri uma base sólida em tecnologia e desenvolvimento. 
+        Meu primeiro emprego na área foi em fevereiro de 2019, marcando o início 
+        de uma carreira que já soma aproximadamente 6 anos de experiência no 
+        desenvolvimento de soluções. Durante esse período, tive a oportunidade 
+        de trabalhar em projetos variados, consolidando minhas habilidades 
+        técnicas e ampliando minha visão estratégica.
         </p>
         <br />
         <p>
-          I have worked with various people across various timezones & have been
-          a great experiences with the mixture pros & cons .
+        Atualmente, estou cursando o CTS em Inteligência Artificial, com o
+        objetivo de aprimorar meus conhecimentos e explorar novas possibilidades
+        dentro da área. Busco constantemente me atualizar e aplicar tecnologias
+        de ponta para entregar soluções inovadoras e eficientes
         </p>
 
         <div className="orgcontainer">
@@ -54,29 +58,16 @@ export default function Experience() {
               onKeyPress={showDesc}
               className="orglist__item"
               onClick={showDesc}
-              tabIndex={-5}
-            >
-              <h5 className="orglist__item--title" data-target="1">
-                Microsoft
-              </h5>
-              <span>
-                <AiFillCaretRight />
-              </span>
-            </div>
-            <div
-              role="button"
-              onKeyPress={showDesc}
-              className="orglist__item"
-              onClick={showDesc}
               tabIndex={-4}
             >
-              <h5 className="orglist__item--title inactive-org" data-target="2">
-                Keysight Technolgies
+              <h5 className="orglist__item--title inactive-org" data-target="1">
+                Gransys
               </h5>
               <span>
                 <AiFillCaretRight />
               </span>
             </div>
+            
             <div
               role="button"
               onKeyPress={showDesc}
@@ -84,8 +75,8 @@ export default function Experience() {
               onClick={showDesc}
               tabIndex={-3}
             >
-              <h5 className="orglist__item--title inactive-org" data-target="3">
-                EXFIT
+              <h5 className="orglist__item--title inactive-org" data-target="2">
+                Pariz e Commim
               </h5>
               <span>
                 <AiFillCaretRight />
@@ -99,8 +90,8 @@ export default function Experience() {
               onClick={showDesc}
               tabIndex={-2}
             >
-              <h5 className="orglist__item--title inactive-org" data-target="4">
-                Bharg Technologies
+              <h5 className="orglist__item--title inactive-org" data-target="3">
+                Bravion
               </h5>
               <span>
                 <AiFillCaretRight />
@@ -116,9 +107,9 @@ export default function Experience() {
               >
                 <h5
                   className="orglist__item--title inactive-org"
-                  data-target="5"
+                  data-target="4"
                 >
-                  BlissLife App
+                  Napp Solutions
                 </h5>
                 <span>
                   <AiFillCaretRight />
@@ -126,100 +117,89 @@ export default function Experience() {
               </div>
             </div>
           </div>
-          <div className="orgdesc " data-target="1">
-            <h3>UX Developer - Consultant</h3>
+
+          <div className="orgdesc inactive-desc" data-target="1">
+            <h3>Developer Backend</h3>
             <p>
-              <strong> Hyderabad , India </strong>
+              <strong> Leme , São Paulo </strong>
             </p>
-            <p className="currently">currently</p>
+
             <ul>
-              <li>- work on building web ui day in and out. </li>
               <li>
-                - write modern , maintainable & accesible code for a diverse
-                projects.
+                - Criar e gerenciar APIs RESTful para comunicação entre o front-end (Vue.js) e o back-end (Laravel), garantindo eficiência e segurança nas transações.
               </li>
-              <li>
-                - write upon varieties of technoliges and frameworks such as
-                React , Angular , Sass etc.
-              </li>
-              <li>
-                - web should be accessible to everyone , also focuses on the
-                accessibilty , reponsiveness , inclusiveness etc.
-              </li>
+              <li>- Desenvolver recursos como carrinho de compras, gerenciamento de produtos, checkout e integração com gateways de pagamento.</li>
+              <li>- Projetar e otimizar modelos de banco de dados relacionais (MySQL/PostgreSQL) para armazenar informações como produtos, clientes e pedidos.</li>
+              <li>- Integrar sistemas de terceiros, como plataformas de pagamento (Mercado Pago, Stone), ERPs (Tiny, Bling), e APIs de logística.</li>
+              <li>- Desenvolver lógica para atualização automática de estoque com base em vendas e movimentações, sincronizando dados com sistemas externos.</li>
+              <li>- Proteger informações sensíveis com boas práticas de segurança, como criptografia de dados e prevenção contra ataques SQL Injection e CSRF.</li>
+              <li>- Realizar otimizações para garantir o desempenho do sistema em períodos de alta demanda, como Black Friday.</li>
             </ul>
           </div>
 
           <div className="orgdesc inactive-desc" data-target="2">
-            <h3>R&D Intern</h3>
+            <h3> Consultor Técnico | Developer Backend/Mobile</h3>
             <p>
-              <strong> Kolkata , India </strong>
+              <strong> Santa Cruz da Conceição, São Paulo </strong>
             </p>
-
             <ul>
-              <li>
-                - Worked with the CloudPeak team which allows to test the
-                IaaS(Infrastructure as a Service) and draw conclusions about it.
-              </li>
-              <li>- Worked on various automations and style modification.</li>
-              <li>- wrote frontend xml frameworks for styling display..</li>
+              <li>- Desenvolver estratégias e recomendar soluções tecnológicas alinhadas aos objetivos do cliente.</li>
+              <li>- Realizar diagnóstico detalhado para entender os desafios e necessidades do cliente.</li>
+              <li>- Garantir a interoperabilidade entre diferentes sistemas por meio de integrações eficientes e personalizadas.</li>
+              <li>- Coordenar equipes e atividades para assegurar a entrega de soluções no prazo e dentro do orçamento.</li>
+              <li>- Produzir relatórios, manuais e guias para facilitar a implementação e o uso das soluções.</li>
+              <li>- Desenvolver tecnologias e apps para nossos clientes.</li>
             </ul>
           </div>
 
           <div className="orgdesc inactive-desc" data-target="3">
-            <h3>Android Engineer</h3>
+            <h3>Fullstack Developer</h3>
             <p>
-              <strong> Kyiv , Ukraine </strong>
+              <strong> Leme, São Paulo </strong>
             </p>
+
             <ul>
-              <li>- worked on the main Android App </li>
-              <li>- implemented subscription model for the company.</li>
+              <li>- Integrar tecnologias de front-end e back-end para construir soluções completas. </li>
               <li>
-                - implemented video compression & playing mechanism for
-                excercises.
+                - Experiência com tecnologias como Node.js, Flask, Python, SQL, NoSQL, IA, AWS, Azure e Serviços Apache.
               </li>
+              <li>- Converter design dos websites e app.</li>
               <li>
-                - designed high quality android app which runs the entire
-                revenue model of the company.
+                - Foco na eficiência e resolução de problemas, garantindo soluções escaláveis e de alto desempenho.
               </li>
             </ul>
           </div>
 
           <div className="orgdesc inactive-desc" data-target="4">
-            <h3>Fullstack Developer</h3>
+            <h3>ETL Developer</h3>
             <p>
-              <strong> Schwyz, Switzerland </strong>
-            </p>
-
-            <ul>
-              <li>- worked on main Android App and Backend Features. </li>
-              <li>
-                - wrote microservices which can be integreted to different
-                platforms & services to have a central platform.
-              </li>
-              <li>- converted the design into Apps & Websites.</li>
-              <li>
-                - worked directly with founders to bring startup into life.
-              </li>
-            </ul>
-          </div>
-
-          <div className="orgdesc inactive-desc" data-target="5">
-            <h3>Fullstack Developer</h3>
-            <p>
-              <strong>Schwyz, Switzerland</strong>
+              <strong> Leme, São Paulo </strong>
             </p>
             <ul>
               <li>
-                - worked on design architecure of the platform from scratch.
+                - Cria e mantém processos de Extração, Transformação e Carga (ETL) para integrar dados de várias fontes em data warehouses ou bancos de dados analítico
               </li>
               <li>
-                - building android apps and various marketing website of the
-                platform to onbaord users.
+                - Trabalha com ferramentas de integração de dados e otimização de fluxos para garantir precisão e desempenho.
               </li>
               <li>
-                - work with the designers to bring design concepts to real apps.
+                - Conecta sistemas e APIs para garantir que diferentes softwares funcionem juntos de forma eficiente..
               </li>
-              <li>- Also worked on developing entire backend.</li>
+              <li>
+                - Resolve incompatibilidades entre plataformas, garantindo integração fluida de dados e processos.
+              </li>
+              <li>
+                - Coleta, organiza e analisa grandes volumes de dados para extrair insights relevantes.
+              </li>
+              <li>
+                - Cria relatórios e dashboards para apoiar decisões estratégicas usando ferramentas como Power BI ou Tableau.
+              </li>
+              <li>
+                - Lidera equipes técnicas, definindo padrões de desenvolvimento, arquiteturas e metodologias.
+              </li>
+              <li>
+                - Mentor técnico, ajudando a resolver desafios e garantir entregas de alta qualidade dentro dos prazos.
+              </li>
             </ul>
           </div>
         </div>

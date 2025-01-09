@@ -93,10 +93,6 @@ export default function About() {
           </p>
         </article>
 
-        <article>
-          <h3>the journey timeline so far </h3>
-          <Timeline />
-        </article>
       </StyledAbout>
     </Container>
   )
