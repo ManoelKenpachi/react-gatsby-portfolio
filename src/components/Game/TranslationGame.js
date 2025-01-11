@@ -7,13 +7,21 @@ const TranslationGame = () => {
   const [input, setInput] = useState("");
   const [message, setMessage] = useState("");
   const [score, setScore] = useState(0);
+  const [revealedLetters, setRevealedLetters] = useState(0);
+
+  const apiKey = "";
 
   const fetchWord = async () => {
     try {
-      const response = await axios.get("https://random-word-api.herokuapp.com/word");
+      const response = await axios.get(
+        "https://random-word-api.herokuapp.com/word"
+      );
       const randomWord = response.data[0];
       setWord(randomWord);
       fetchTranslation(randomWord);
+      setRevealedLetters(0);
+      setMessage("");
+      setInput("");
     } catch (error) {
       console.error("Erro ao buscar palavra aleatória:", error);
     }
@@ -22,17 +30,29 @@ const TranslationGame = () => {
   const fetchTranslation = async (word) => {
     try {
       const response = await axios.post(
-        "https://libretranslate.de/translate",
+        "https://api.openai.com/v1/chat/completions",
         {
-          q: word,
-          source: "en",
-          target: "pt",
+          model: "gpt-3.5-turbo",
+          messages: [
+            {
+              role: "system",
+              content: "Você é um tradutor de inglês para português.",
+            },
+            {
+              role: "user",
+              content: `Traduza a palavra "${word}" para português.`,
+            },
+          ],
         },
         {
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${apiKey}`,
+          },
         }
       );
-      setTranslation(response.data.translatedText);
+      const translatedText = response.data.choices[0].message.content.trim();
+      setTranslation(translatedText);
     } catch (error) {
       console.error("Erro ao traduzir palavra:", error);
     }
@@ -48,9 +68,9 @@ const TranslationGame = () => {
   const handleKeyPress = (e) => {
     if (e.key === "Backspace") {
       setInput(input.slice(0, -1));
-    } else if (/^[a-zA-Z]$/.test(e.key) && input.length < word.length) {
+    } else if (/^[a-zA-Z]$/.test(e.key) && input.length < translation.length) {
       setInput(input + e.key);
-    } else if (e.key === "Enter" && input.length === word.length) {
+    } else if (e.key === "Enter" && input.length === translation.length) {
       checkAnswer();
     }
   };
@@ -59,11 +79,25 @@ const TranslationGame = () => {
     if (input.toLowerCase() === translation.toLowerCase()) {
       setMessage("Correto!");
       setScore(score + 1);
+      fetchWord();
     } else {
-      setMessage(`Errado! A resposta correta era: ${translation}`);
+      if (revealedLetters >= translation.length - 1) {
+        setMessage(`Errado! A resposta correta era: ${translation}`);
+        fetchWord();
+      } else {
+        setRevealedLetters(revealedLetters + (revealedLetters === 0 ? 1 : 2));
+        setMessage("Errado! Vamos revelar mais letras.");
+      }
     }
-    setInput("");
-    fetchWord();
+  };
+
+  const renderRevealedTranslation = () => {
+    return Array.from({ length: translation.length }).map((_, index) => {
+      if (index < revealedLetters) {
+        return translation[index];
+      }
+      return "";
+    });
   };
 
   return (
@@ -84,12 +118,12 @@ const TranslationGame = () => {
       <div
         style={{
           display: "grid",
-          gridTemplateColumns: `repeat(${word.length}, 50px)`,
+          gridTemplateColumns: `repeat(${translation.length}, 50px)`,
           gap: "10px",
           justifyContent: "center",
         }}
       >
-        {Array.from({ length: word.length }).map((_, index) => (
+        {Array.from({ length: translation.length }).map((_, index) => (
           <div
             key={index}
             style={{
@@ -104,7 +138,7 @@ const TranslationGame = () => {
               textTransform: "uppercase",
             }}
           >
-            {input[index] || ""}
+            {input[index] || renderRevealedTranslation()[index]}
           </div>
         ))}
       </div>
