@@ -2,15 +2,15 @@ import React from "react"
 import styled from "styled-components"
 import Container from "../components/container"
 import Timeline from "../images/assets/timeline"
-import logo from "../images/RohanPrasad.jpg"
+import logo from "../images/ManoelKenpachi.jpg"
 import { SEO } from "../components"
 export default function About() {
   return (
     <Container>
-      <SEO title="About" />
+      <SEO title="Sobre" />
 
       <StyledAbout>
-        <h2>about</h2>
+        <h2>sobre</h2>
 
         <div style={{ display: "flex", justifyContent: "center" }}>
           <img
@@ -25,71 +25,58 @@ export default function About() {
         </div>
 
         <p>
-          Hey , thanks for reading by. This is me in a highly edited picture of
-          mine where i look good which i am not. <br />i am Rohan. many people
-          call me Ro. & i like it that way.
+          Neste portfólio, busco refletir sobre questões fundamentais que moldam minha 
+          identidade como indivíduo e profissional.
+          Para cada pergunta da reflexão dialética de Sócrates, 
+          apresento uma resposta honesta comigo mesmo.
+          Acredito que o autoconhecimento e a evolução contínua são essenciais para 
+          alcançar excelência e propósito.
         </p>
 
         <article>
           <strong>
-            <h4>what the name signify ? </h4>
+            <h4>Quem sou eu?</h4>
           </strong>
           <p>
-            “Rohan” in sanskrit signifies “Ascending” and i am following it
-            daily by learning and evolving myself.
+            Sou um desenvolvedor apaixonado por tecnologia e inovação, sempre em busca de novos desafios e aprendizados. 
+            Minha jornada é guiada pela curiosidade e pelo desejo de criar soluções que impactem positivamente a vida das pessoas.
           </p>
         </article>
 
         <article>
           <strong>
-            <h4>where ?</h4>
+            <h4>Qual o propósito da minha vida?</h4>
           </strong>
           <p>
-            I was born and brought in the beautiful place in “northern bengal”
-            based out in “India.” if you ever visit my place we might have a tea
-            together someday which is produced just nearby my home.
+            Acredito que o propósito da minha vida é contribuir para a construção de um mundo melhor, 
+            para a minha família e amigos.
           </p>
         </article>
 
         <article>
           <strong>
-            <h4>some personal interest </h4>
+            <h4>O que considero virtude e como a pratico?</h4>
           </strong>
           <p>
-            I love bike rides and travelling solo. I would definetely start
-            travelling around and making vlogs & stories .
+            Uma virtude que considero essencial é a felicidade. Carregar alegria e positividade por onde passa, demonstrar companheirismo e empatia com o próximo.
           </p>
         </article>
 
         <article>
           <strong>
-            <h4>the schooling story </h4>
+            <h4>O que significa fazer bem o meu trabalho?</h4>
           </strong>
-
           <p>
-            i studied the secondary and sr. secondary from the same school. It
-            happened well , great sets of friends and tried out sports to study
-            . so many memories attached out there , we friends stills wish to a
-            have school day sitting out on the same benches.
+            Fazer bem o meu trabalho significa entregar resultados de alta qualidade, cumprir prazos e estar sempre disposto a colaborar com a equipe. É também buscar constantemente melhorar minhas habilidades e conhecimentos, para que eu possa oferecer soluções inovadoras e eficientes.
           </p>
         </article>
 
         <article>
           <strong>
-            <h4>the college story </h4>
+            <h4>Minha profissão reflete meus valores pessoais?</h4>
           </strong>
-
           <p>
-            getting into Computer Science & Engineering which i had no idea how
-            i will do by just having an interest of computers. Hostel is one the
-            best things happened to my life. “It taught how to live a life”. I
-            was always a introvert & extrovert too depends upon the people i am
-            surrounded with. I still miss the 2 AM hostel stories & the birthday
-            bashes. being a last bencher i have seen the whole class in a
-            different way. nevermind , anyone reading this from SMIT do react
-            out @rohanprasadofficial on insta , i am super active there. Atlast
-            , i am 2020 batch graduating virtually where pre well planned things
-            got ruined.
+            Sim, minha profissão reflete meus valores pessoais. Acredito na importância da integridade. Esses valores são fundamentais. 
           </p>
         </article>
 

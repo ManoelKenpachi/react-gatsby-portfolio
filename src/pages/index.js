@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Newsletter from "../components/Utility/newsletter"
 import Container from "../components/container"
 import Social from "../components/Utility/social"
+import TranslationGame from "../components/Game/TranslationGame";
 import { Link } from "gatsby"
 
 const IndexPage = () => {
@@ -19,14 +20,9 @@ const IndexPage = () => {
           <Link to="/experience">
             <span>‣ Experiência</span>
           </Link>
-          <Link to="/creative">
-            <span>‣ Repositório</span>
-          </Link>
-          <Link to="/storytelling">
-            <span>‣ Sobre mim</span>
-          </Link>
         </div>
         <Social />
+        <TranslationGame />
       </StyledHome>
     </Container>
   )
